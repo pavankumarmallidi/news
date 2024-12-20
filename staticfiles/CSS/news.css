@@ -1,0 +1,144 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+#maincontainer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#header {
+    background-image: url('/static/IMAGES/loginframe.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 10px 20px;
+    align-items: center;
+    height: 93vh;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+#logo {
+    font-size: 60px;
+    font-weight: bold;
+    width: fit-content;
+    margin-left: 100px;
+    float: left;
+}
+
+#list {
+    margin-left: 1500px;
+    font-size: 20px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+#list ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+#list a {
+    color: white;
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+}
+
+#list a:hover {
+    font-size: 23px;
+}
+
+#list a:active {
+    font-size: 18px;
+}
+
+#footer {
+    background: url('/static/IMAGES/GooglePlay.png'), url('/static/IMAGES/AppStore.png'), rgb(19, 17, 17);
+    background-repeat: no-repeat;
+    background-position: 1500px, 1700px;
+    background-size: 150px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px 100px;
+}
+
+.Block-details {
+    color: white;
+    max-width: fit-content;
+    height: 600px;
+    margin: 70px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.8px);
+    -webkit-backdrop-filter: blur(1.8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+#section1,
+#section2 {
+    float: inline-start;
+    height: 580px;
+    width: 475px;
+    padding: 30px;
+}
+
+#section2 {
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+#section2 a {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: right;
+    font-size: 35px;
+    padding: 20px;
+}
+
+#section1 h2 {
+    font-size: 60px;
+}
+
+
+
+#Block-image {
+    width: 450px;
+    height: 450px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 2s ease;
+}
+
+#Block-image:hover {
+    transform: scale(0.95);
+}
+
+#Block-Content {
+    font-size: 25px;
+    margin-top: 50px;
+    text-indent: 0px;
+    text-align: justify;
+}

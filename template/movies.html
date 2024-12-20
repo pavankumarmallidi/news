@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="{% static 'CSS/blocks.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'IMAGES/logo.png' %}">
+    
+
+</head>
+
+<body>
+    <div id="maincontainer">
+        <div id="header">
+            <div id="list">
+                <ul>
+                    <li><a href="{% url 'homepage' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+
+                </ul>
+            </div>
+            <div id="logo">Movies</div>
+            <div id="tagline">Discover the Movies news</div>
+            <div id="Block-list" class="Block-list">
+                <div>
+                    <div class="Block-item">
+                        <h2>Raja Saab</h2>
+                        <a href="{% url 'movies:news' 'rajasaab' %}">
+                            <img src="/static/IMAGES/rajasaab.jpeg" alt="Raja Saab" class="Block-img">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="Block-item">
+                        <h2>Salaar</h2>
+                        <a href="{% url 'movies:news' 'salaar' %}">
+                            <img src="/static/IMAGES/Salaar.jpeg" alt="Salaar" class="Block-img">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="Block-item">
+                        <h2>Chatrapati</h2>
+                        <a href="{% url 'movies:news' 'chatrapati' %}">
+                            <img src="/static/IMAGES/chatrapati.jpeg" alt="Chatrapati" class="Block-img">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="Block-item">
+                        <h2>OG</h2>
+                        <a href="{% url 'movies:news' 'og' %}">
+                            <img src="/static/IMAGES/og.jpeg" alt="OG" class="Block-img">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="Block-item">
+                        <h2>Ustaad Bhagat Singh</h2>
+                        <a href="{% url 'movies:news' 'ubc' %}">
+                            <img src="/static/IMAGES/ubs.jpeg" alt="Ustaad Bhagat Singh" class="Block-img">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="Block-item">
+                        <h2>Bheemla Nayak</h2>
+                        <a href="{% url 'movies:news' 'bheemlaNayak' %}">
+                            <img src="/static/IMAGES/bheemla.jpeg" alt="Bheemla Nayak" class="Block-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>24/7 News. All rights reserved 2024</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

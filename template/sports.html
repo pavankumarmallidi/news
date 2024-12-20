@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+    <link rel="stylesheet" href="{% static 'CSS/blocks.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'IMAGES/logo.png' %}">
+</head>
+
+<body>
+    <div id="maincontainer">
+        <div id="header">
+            <div id="list">
+                <ul>
+                    <li><a href="{% url 'homepage' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+
+                </ul>
+            </div>
+            <div id="logo">Sports</div>
+            <div id="tagline">Discover the Sports news</div>
+            <div id="Block-list" class="Block-list">
+                <div>
+                    <div class="Block-item">
+                        <h2>Cricket</h2>
+                        <a href="{% url 'sports:news' 'cricket' %}">
+                            <img src="/static/IMAGES/cricket.png" alt="Cricket" class="Block-img">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="Block-item">
+                        <h2>Kabbadi</h2>
+                        <a href="{% url 'sports:news' 'kabbadi' %}">
+                            <img src="/static/IMAGES/kabbadi.png" alt="Kabbadi" class="Block-img">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="Block-item">
+                        <h2>Volley Ball</h2>
+                        <a href="{% url 'sports:news' 'volleyball' %}">
+                            <img src="/static/IMAGES/volleyball.png" alt="Volley Ball" class="Block-img">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="Block-item">
+                        <h2>Foot Ball</h2>
+                        <a href="{% url 'sports:news' 'football' %}">
+                            <img src="/static/IMAGES/football.png" alt="Foot Ball" class="Block-img">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="Block-item">
+                        <h2>Hockey</h2>
+                        <a href="{% url 'sports:news' 'hockey' %}">
+                            <img src="/static/IMAGES/hockey.png" alt="Hockey" class="Block-img">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="Block-item">
+                        <h2>Chess</h2>
+                        <a href="{% url 'sports:news' 'chess' %}">
+                            <img src="/static/IMAGES/chess.png" alt="Chess" class="Block-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>24/7 News. All rights reserved 2024</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

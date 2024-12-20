@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static 'CSS/homepage.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'IMAGES/zomato.png' %}">
+
+</head>
+
+<body>
+    <div id="maincontainer">
+        <div id="header">
+            <div id="list">
+                <ul>
+                    <li><a href="{% url 'homepage' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                </ul>
+            </div>
+            <div id="logo">24/7 News</div>
+            <div id="tagline">
+                To deliver timely and accurate news coverage around the clock. <br> <br>
+                A dedicated team of experienced journalists committed to journalistic integrity. <br> <br>
+                Encouraging audience interaction and feedback to foster a community of informed readers. 
+            </div>
+        </div>
+        <div id="footer">
+            <p>24/7 News. All rights reserved 2024</p>
+        </div>
+    </div>
+</body>
+
+</html>

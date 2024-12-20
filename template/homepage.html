@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/7 News</title>
+    <link rel="stylesheet" href="{% static 'CSS/homepage.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'IMAGES/logo.png' %}">
+
+
+</head>
+
+<body>
+    <div id="maincontainer">
+        <div id="header">
+            <div id="list">
+                <ul>
+                    <li><a href="{% url 'homepage' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+
+                </ul>
+            </div>
+            <div id="logo">24/7 News</div>
+            <div id="tagline">Discover the news in Sports and Movies</div>
+            <div id="links">
+                <a href="{% url 'sports:home' %}">Sports</a>
+                <a href="{% url 'movies:home' %}">Movies</a>
+            </div>
+        </div>
+        <div id="footer">
+            <p>24/7 News. All rights reserved 2024</p>
+        </div>
+    </div>
+</body>
+
+</html>
